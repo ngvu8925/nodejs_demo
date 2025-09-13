@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NodeJS Demo — Tính tuổi</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="card">
+      <header class="card-head">
+        <h1>Chào mừng 👋</h1>
+        <p class="muted">Nhập tên và năm sinh — trang sẽ tính tuổi cho bạn.</p>
+      </header>
+
+      <form id="userForm" class="form">
+        <div class="row">
+          <label for="name">Tên</label>
+          <input id="name" name="name" type="text" placeholder="Ví dụ: Nguyễn Văn A" required />
+        </div>
+
+        <div class="row">
+          <label for="year">Năm sinh</label>
+          <input id="year" name="year" type="number" min="1900" max="2099" placeholder="Ví dụ: 2000" required />
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn">Tính tuổi & Lưu</button>
+        </div>
+      </form>
+
+      <section id="result" class="result hidden">
+        <h2 id="greeting"></h2>
+        <p id="ageText"></p>
+      </section>
+
+      <footer class="card-foot">
+        <small>NodeJS Demo • Lưu dữ liệu vào server</small>
+      </footer>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast hidden"></div>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>

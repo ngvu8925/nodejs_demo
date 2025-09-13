@@ -20,5 +20,8 @@
   "homepage": "https://github.com/ngvu8925/nodejs_demo#readme",
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
